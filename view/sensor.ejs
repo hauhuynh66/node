@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendor/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-12 col-mb-3 col-lg-3 col-xl-3 bg-primary pl-3 pr-0" id="sidebar">
+        <%- include('./partial/sidebar')%>
+    </div>
+    <div class="col-sm-12 col-mb-9 col-lg-9 col-xl-9 content" id="content">
+        <%- include('./partial/topbar')%>
+        <div class="main-content m-4">
+            <div class="dataTables_wrapper">
+                <table class="table table-bordered dataTable" id="sensorTable"
+                       width="100%" cellpadding="0" role="grid" aria-describedby="dataTable_info">
+                    <thead class="text-center">
+                    <tr role="row">
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" width="10%">
+                            <span>ID</span>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" width="20%">
+                            <span>Temperature</span>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" width="20%">
+                            <span>Humidity</span>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" width="50%">
+                            <span>Time</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="sensorTable-body" class="text-center">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <%-include('./partial/footer')%>
+        </div>
+    </div>
+</div>
+<script src="../static/vendor/jquery/jquery-3.4.1.js"></script>
+<script src="../static/vendor/datatables/jquery.dataTables.js"></script>
+<script src="../static/vendor/bootstrap/bootstrap.js"></script>
+<script src="../static/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../static/vendor/moment/moment.js"></script>
+<script src="../static/vendor/moment/moment-timezone.js"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/sensor.js"></script>
+</body>
+</html>

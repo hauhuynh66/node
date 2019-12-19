@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-12 col-mb-3 col-lg-3 col-xl-3 bg-primary pl-3 pr-0" id="sidebar">
+        <%- include('./partial/sidebar')%>
+    </div>
+    <div class="col-sm-12 col-mb-9 col-lg-9 col-xl-9 content" id="content">
+        <%- include('./partial/topbar')%>
+        <div class="main-content m-5">
+            <div class="row">
+                <div class="col-6">
+                    <label for="temp">Temp</label>
+                    <input class="form-control" id="temp">
+                    <label for="humid">Humid</label>
+                    <input class="form-control" id="humid">
+                    <button class="btn btn-info mt-3" id="post">Post</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <%-include('./partial/footer')%>
+        </div>
+    </div>
+</div>
+<script src="../static/vendor/jquery/jquery-3.4.1.js"></script>
+<script src="../static/vendor/bootstrap/bootstrap.js"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/index.js"></script>
+</body>
+</html>

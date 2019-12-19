@@ -1,0 +1,30 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "My App 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "MyApp"
+  ],
+  "author": "Hau Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "latest",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^2.1.4",
+    "mqtt": "^3.0.0",
+    "sequelize": "^5.21.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
