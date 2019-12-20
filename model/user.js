@@ -2,7 +2,7 @@ var db = require("../config/database");
 var sequelize = db.sequelize;
 var model = db.model;
 var Sequelize = db.Sequelize;
-var bcrypt = require("bcrypt");
+var bcrypt = require("bcryptjs");
 
 function hash(password) {
     return bcrypt.hashSync(password,5);

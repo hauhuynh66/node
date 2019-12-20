@@ -3,7 +3,7 @@ var router = express.Router();
 var bodyParser = require("body-parser");
 var urlParser = bodyParser.urlencoded({extended: false});
 var user = require("../model/user");
-var bcrypt = require("bcrypt");
+var bcrypt = require("bcryptjs");
 var value = require("../config/value");
 var jwt = require("jsonwebtoken");
 

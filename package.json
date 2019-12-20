@@ -13,15 +13,17 @@
   "author": "Hau Huynh",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.7",
-    "body-parser": "latest",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "jsonwebtoken": "^8.5.1",
     "mariadb": "^2.1.4",
     "mqtt": "^3.0.0",
+    "onoff": "^5.0.0",
     "sequelize": "^5.21.3",
+    "serialport": "^8.0.5",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
