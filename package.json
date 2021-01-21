@@ -24,7 +24,7 @@
     "onoff": "^5.0.0",
     "sequelize": "^5.21.3",
     "serialport": "^8.0.5",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
